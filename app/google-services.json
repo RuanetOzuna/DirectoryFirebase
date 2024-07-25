@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "545263468693",
+    "project_id": "agendafirebase-ec1fd",
+    "storage_bucket": "agendafirebase-ec1fd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545263468693:android:d19b48363833ea30ab5b9c",
+        "android_client_info": {
+          "package_name": "com.ruanetozuna.agendafirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8FEUCy0RgDrnLqMKex6lDDqTHGcwYOvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
