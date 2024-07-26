@@ -24,15 +24,16 @@ class ListaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lista)
+
         basedatabase = FirebaseDatabase.getInstance()
         referencia = basedatabase.getReferenceFromUrl(
-            ReferenciasFirebase.URL_DATABASE +
-                    ReferenciasFirebase.DATABASE_NAME + "/" +
-                    ReferenciasFirebase.TABLE_NAME
+            "${ReferenciasFirebase.URL_DATABASE}${ReferenciasFirebase.DATABASE_NAME}/${ReferenciasFirebase.TABLE_NAME}"
         )
+
         btnNuevo = findViewById(R.id.btnNuevo)
         listView = findViewById(R.id.listView)
         obtenerContactos()
+
         btnNuevo.setOnClickListener {
             setResult(Activity.RESULT_CANCELED)
             finish()
